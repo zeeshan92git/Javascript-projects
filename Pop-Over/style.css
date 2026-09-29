@@ -1,0 +1,86 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for center alignment */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    position: relative;
+}
+
+/* Main button styling */
+.clickbtn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clickbtn:hover {
+    background-color: #2980b9;
+}
+
+/* Popover container (initially hidden) */
+.popover {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: none;
+}
+
+/* Popover content */
+.popOverInner {
+    margin-bottom: 10px;
+}
+
+.popOverInner h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.popOverInner p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Close button */
+.closebtn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s;
+}
+
+.closebtn:hover {
+    background-color: #c0392b;
+}
+
+/* Show popover when active */
+.popover.active {
+    display: block;
+}
